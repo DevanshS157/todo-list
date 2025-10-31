@@ -1,0 +1,80 @@
+
+:root {
+    --primary: #2f54eb;
+    --done: #52c41a;
+}
+
+body {
+    font-family: system-ui, sans-serif;
+    max-width: 480px;
+    margin: 40px auto;
+    padding: 0 15px;
+}
+
+h1 {
+    text-align: center;
+    color: var(--primary);
+}
+
+.input-group {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    font-size: 1rem;
+}
+
+button {
+    padding: 8px 14px;
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.filter {
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.filter button {
+    background: #f0f0f0;
+    color: #000;
+    margin: 0 4px;
+}
+
+.filter button.active {
+    background: var(--primary);
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+li.done span {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.close {
+    background: transparent;
+    color: #ff4d4f;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
